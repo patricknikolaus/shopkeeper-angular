@@ -1,9 +1,15 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http'
 
 @Injectable({
   providedIn: 'root'
 })
 export class GamesService {
+  url: string = 'http://localhost:3000/games'
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  getGames(game: any) {
+    return this.http.post(this.url, { search: game });
+  }
 }

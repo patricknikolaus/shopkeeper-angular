@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GamesService } from 'src/app/services/games/games.service';
 
 @Component({
   selector: 'app-game-index',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./game-index.component.scss']
 })
 export class GameIndexComponent implements OnInit {
-
-  constructor() { }
+  games: any = [];
+  search: string = '';
+  constructor(private gamesService: GamesService) { }
 
   ngOnInit(): void {
+    this.gamesService.getGames(this.search).subscribe(res => {
+      this.games = res;
+      console.log(this.games)
+    });
   }
 
 }
