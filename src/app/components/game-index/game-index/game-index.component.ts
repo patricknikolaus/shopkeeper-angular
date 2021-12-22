@@ -18,4 +18,9 @@ export class GameIndexComponent implements OnInit {
     });
   }
 
+  searchGame() {
+    this.gamesService.getGames(this.search).subscribe(res =>
+      this.games = res
+    );
+  }
 }

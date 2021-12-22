@@ -8,13 +8,15 @@ import { NavbarComponent } from './components/navbar/navbar/navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GameIndexComponent } from './components/game-index/game-index/game-index.component';
 import { FooterComponent } from './components/footer/footer/footer.component';
+import { GameSearchComponent } from './components/game-search/game-search/game-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     GameIndexComponent,
-    FooterComponent
+    FooterComponent,
+    GameSearchComponent
   ],
   imports: [
     BrowserModule,

@@ -12,4 +12,8 @@ export class GamesService {
   getGames(game: any) {
     return this.http.post(this.url, { search: game });
   }
+
+  getGame(id: number) {
+    return this.http.post(`${this.url}/${id}`, {})
+  }
 }
