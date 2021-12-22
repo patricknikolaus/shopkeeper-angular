@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar/navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GameIndexComponent } from './components/game-index/game-index/game-index.component';
+import { FooterComponent } from './components/footer/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    GameIndexComponent
+    GameIndexComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
