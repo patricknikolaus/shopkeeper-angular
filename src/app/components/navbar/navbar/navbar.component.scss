@@ -1,5 +1,10 @@
 nav {
   background-color: #000000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
 }
 
 .text-color {
@@ -17,7 +22,3 @@ nav {
   text-decoration: underline;
 }
 
-.search {
-  margin-top: 15px;
-  margin-left: 15px;
-}
